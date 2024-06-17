@@ -39,5 +39,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 app.use(router_index)
 
 //Export
-
-app.listen(3000)
+let port = 3000
+app.listen(port, () => {
+    console.log(`✅| Server ${port}`)
+})
