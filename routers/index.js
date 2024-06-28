@@ -1,18 +1,18 @@
-const Router = require("express").Router()
+const router = require("express").Router()
 
 
-Router.get("/", (req, res) => {
+router.get("/", (req, res) => {
 res.render("index")
 })
 
-Router.get("/muziek", (req, res) => {
+router.get("/muziek", (req, res) => {
     res.render("muziek")
 })
-Router.get("/dans", (req, res) => {
+router.get("/dans", (req, res) => {
     res.render("dans")
 })
-Router.get("/kunst", (req, res) => {
+router.get("/kunst", (req, res) => {
     res.render("kunst")
 })
 
-module.exports = Router
+module.exports = router
