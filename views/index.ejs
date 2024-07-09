@@ -98,21 +98,20 @@
     </div>
 </body>
 <script>
-    // Log page load
-    // fetch('https://websitejulianckv.onrender.com/me/sendMail', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify({ message: 'Render' })
-    // });
-
-    fetch('http://localhost:3000/me/sendMail?message=render', {
+    fetch('https://websitejulianckv.onrender.com/me/sendMail', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({ message: 'Render' })
-    })
+    });
+
+    // fetch('http://localhost:3000/me/sendMail?message=render', {
+    //     method: 'POST',
+    //     headers: {
+    //         'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify({ message: 'Render' })
+    // })
 </script>
 </html>
